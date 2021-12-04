@@ -54,47 +54,47 @@
                     <div class="auto-form-wrapper">
                         <form method="POST" enctype="multipart/form-data">
                          {% csrf_token %}
+                            {{form}}
+<!--                            <div class="form-group">-->
+<!--                                <div class="input-group">-->
+<!--                                    {{form.user.label}}-->
+<!--                                    {{form.user}}-->
 
-                            <div class="form-group">
-                                <div class="input-group">
-                                    {{form.user.label}}
-                                    {{form.user}}
-
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="input-group">
-                                    {{form.email.label}}
-                                    {{form.email}}
-
-                                </div>
-                            </div>
-<!--                            {% if company is None %}-->
-<!--                                <div class="form-group">-->
-<!--                                    <div class="input-group">-->
-<!--                                        <input type="text" class="form-control" placeholder="Company Name"-->
-<!--                                               name="company_name">-->
-<!--                                        <div class="input-group-append">-->
-<!--                                        <span class="input-group-text"><i-->
-<!--                                                class="mdi mdi-check-circle-outline"></i></span>-->
-<!--                                        </div>-->
-<!--                                    </div>-->
 <!--                                </div>-->
-<!--                            {% endif %}-->
-                            <div class="form-group">
-                                <div class="input-group">
-                                    {{form.phone.label}}
-                                    {{form.phone}}
+<!--                            </div>-->
+<!--                            <div class="form-group">-->
+<!--                                <div class="input-group">-->
+<!--                                    {{form.email.label}}-->
+<!--                                    {{form.email}}-->
 
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="input-group">
-                                    {{form.password.label}}
-                                    {{form.password}}
+<!--                                </div>-->
+<!--                            </div>-->
+<!--&lt;!&ndash;                            {% if company is None %}&ndash;&gt;-->
+<!--&lt;!&ndash;                                <div class="form-group">&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <div class="input-group">&ndash;&gt;-->
+<!--&lt;!&ndash;                                        <input type="text" class="form-control" placeholder="Company Name"&ndash;&gt;-->
+<!--&lt;!&ndash;                                               name="company_name">&ndash;&gt;-->
+<!--&lt;!&ndash;                                        <div class="input-group-append">&ndash;&gt;-->
+<!--&lt;!&ndash;                                        <span class="input-group-text"><i&ndash;&gt;-->
+<!--&lt;!&ndash;                                                class="mdi mdi-check-circle-outline"></i></span>&ndash;&gt;-->
+<!--&lt;!&ndash;                                        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                            {% endif %}&ndash;&gt;-->
+<!--                            <div class="form-group">-->
+<!--                                <div class="input-group">-->
+<!--                                    {{form.phone.label}}-->
+<!--                                    {{form.phone}}-->
 
-                                </div>
-                            </div>
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <div class="form-group">-->
+<!--                                <div class="input-group">-->
+<!--                                    {{form.password.label}}-->
+<!--                                    {{form.password}}-->
+
+<!--                                </div>-->
+<!--                            </div>-->
 
                             <div class="form-group d-flex justify-content-center">
                                 <div class="form-check form-check-flat mt-0">

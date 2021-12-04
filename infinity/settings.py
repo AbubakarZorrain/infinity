@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'infinityapp.apps.InfinityappConfig',
+    'django_email_verification',
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -133,3 +135,22 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+
+#SMTP Configrations
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = '587'
+EMAIL_USE_TLS = True
+# EMAIL_HOST_USER = '_mainaccount@ocdapps.net'
+# EMAIL_HOST_PASSWORD = 'Jordyn1628$'
+EMAIL_HOST_USER = 'practiceinfinitysa@gmail.com'
+EMAIL_HOST_PASSWORD = 'JordynJane16%%$$**&&'
+EMAIL_ACTIVE_FIELD = 'is_active'
+EMAIL_SERVER = 'mail.ocdapps.net'
+# EMAIL_PORT = 587
+EMAIL_MAIL_SUBJECT = 'Confirm your Email for Practise Infinity'
+EMAIL_MAIL_HTML = 'mail_body.html'
+EMAIL_MAIL_PLAIN = 'mail_body.txt'
+EMAIL_PAGE_TEMPLATE = 'confirm_template.html'
